@@ -1,0 +1,95 @@
+// @import "../../responsive.scss";
+
+nav {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  // a {
+  //   @include sm{
+  //       display: none;
+  //   }
+  // }
+
+  .left {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+      font-size: 20px;
+
+      img{
+        width: 28px;
+      }
+    }
+  }
+  .right {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #fcf5f3;
+    height: 100%;
+
+    a {
+      padding: 13px 20px;
+      background-color: black;
+      color: white;
+      margin: 10px;
+      border-radius: 5px;
+    }
+
+    .hightlight-btn {
+      background-color: #f1c40f;
+    }
+  } 
+
+  .hamburger{
+    display: none;
+    z-index: 999;
+
+    img {
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+      }
+
+    // @include sm {
+    //     display: inline;
+    //   }
+  }
+
+  .menu{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100vh;  
+    background-color: black; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.5s ease;
+    &.active {
+        right: 0;
+      }
+
+      // @include sm {
+      //   a {
+      //     display: initial;
+      //     font-size: 24px;
+      //     margin: 14px 0;
+      //   }
+      // }
+  }
+
+}
