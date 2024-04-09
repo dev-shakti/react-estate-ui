@@ -1,4 +1,4 @@
-@import "../responsive.scss"
+
 
 .homePage{
     display: flex;
@@ -54,9 +54,7 @@
             position: absolute;
             right: 0;
 
-            @include sm{
-                display: none;
-            }
+           
          }
     }
 }
