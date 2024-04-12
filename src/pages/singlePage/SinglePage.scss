@@ -1,9 +1,11 @@
 .singlePage{
-    height: 100%;
+    min-height: 100%;
     display: flex;
-    .details{
-        flex: 3;
 
+    .details{
+        flex: 3;  
+        overflow-y: scroll;
+        
         .wrapper{
             padding-right: 20px;
 

@@ -7,7 +7,7 @@ const SinglePage = () => {
     <div className="singlePage">
       <div className="details">
         <div className="wrapper">
-          <Slider />
+          <Slider images={singlePostData.images}/>
           <div className="info">
             <div className="top">
               <div className="post">
@@ -33,7 +33,7 @@ const SinglePage = () => {
         <div className="wrapper">
           <h3 className="title">General</h3>
           <div className="listVertical">
-          <div className="feature">
+            <div className="feature">
               <img src="/utility.png" alt="" />
               <div className="featureText">
                 <span>Utilities</span>
@@ -57,7 +57,7 @@ const SinglePage = () => {
           </div>
           <h3 className="title">Room Sizes</h3>
           <div className="sizes">
-          <div className="size">
+            <div className="size">
               <img src="/size.png" alt="" />
               <span>80 sqft</span>
             </div>
